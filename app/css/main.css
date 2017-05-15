@@ -3,7 +3,9 @@
   padding: 0; }
 
 .wrapper {
+  width: 1440px;
   height: 100%;
+  margin: auto;
   font-family: 'Open Sans', sans-serif; }
   .wrapper a {
     text-decoration: none; }
@@ -13,7 +15,8 @@
   margin: auto; }
 
 .header {
-  height: 100px; }
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.8); }
 
 .logo {
   font-family: 'Lobster', cursive;
@@ -36,20 +39,64 @@
     width: 80px;
     color: #000;
     margin-left: 15px;
-    line-height: 7;
-    transition: .3; }
+    line-height: 7; }
     .nav a:hover {
       color: #44c0c2;
       border-bottom: 3px solid #44c0c2; }
 
-.team {
-  height: 800px; }
+.stickytop {
+  width: 1440px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: .5s; }
+
+.team-header {
+  text-align: center;
+  margin: 100px 0;
+  font-size: 32px;
+  font-weight: 200;
+  color: #4e525d; }
+
+.team-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 110px 0; }
+
+.team-block-man {
+  width: 245px;
+  height: 415px;
+  text-align: center;
+  color: #4e525d;
+  font-weight: 200; }
+  .team-block-man h6 {
+    font-size: 22px;
+    margin-top: 70px;
+    font-weight: 400; }
+
+.team-avatar {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #eeeef0; }
+
+.plans-block {
+  height: 740px;
+  background-color: #f1f1f1; }
+
+footer {
+  width: 1440px;
+  height: 685px;
+  margin: auto;
+  background: #181818 url("../img/footer-background.jpg") no-repeat; }
 
 .jcarousel-wrapper {
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 565px;
-  margin: auto; }
+  margin: auto;
+  background-color: #44c0c2; }
 
 /** Carousel **/
 .jcarousel {
@@ -138,7 +185,7 @@
   bottom: 0;
   left: 0;
   margin: auto; }
-  .slider-text h2 {
+  .slider-text h3 {
     font-size: 52px;
     font-weight: 600; }
   .slider-text span {
@@ -154,4 +201,5 @@
     border: 2px solid #fff;
     color: #fff;
     font-size: 22px;
-    border-radius: 6px; }
+    border-radius: 6px;
+    cursor: pointer; }
