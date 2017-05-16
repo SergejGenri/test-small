@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test-small</title>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -17,12 +19,12 @@
 				<h1><a href="" class="logo">Author</a></h1>
 				<nav class="nav">
 					<ul>
-						<li><a href="">Home</a></li>
+						<li class="current"><a href="#">Home</a></li>
 						<li><a href="">Service</a></li>
 						<li><a href="">Portfolio</a></li>
-						<li><a href="">Team</a></li>
+						<li><a href="#team">Team</a></li>
 						<li><a href="">Blog</a></li>
-						<li><a href="">Contact</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -56,9 +58,10 @@
 				</div>
 				<a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
 				<a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+            </div>
 		</section>
 
-		<section class="team">
+		<section class="team" id="team">
 			<div class="containers">
 				<h3 class="team-header">The Team</h3>
 				<div class="team-block">
@@ -89,58 +92,60 @@
 				</div>
 			</div>
 			<div class="team-plans">
-				<div class="team-flex containers">
-					<div class="team-plans-block">
-						<div class="plans-header">Basic</div>
-						<ul>
-							<li>$5.01/Month</li>
-							<li>Lorem ipsum</li>
-							<li>Dolor sit amet, consect</li>
-							<li>Adipiscing elit</li>
-							<li>Proin commodo turpis</li>
-							<li>lacus pulvinarvel</li>
-							<li>Prnare nisi pretium</li>
-						</ul>
-						<button class="btn-buy">Buy now</button>
-					</div>
-					<div class="team-plans-block">
-						<div class="plans-header">Pro</div>
-						<ul>
-							<li>$5.01/Month</li>
-							<li>Lorem ipsum</li>
-							<li>Dolor sit amet, consect</li>
-							<li>Adipiscing elit</li>
-							<li>Proin commodo turpis</li>
-							<li>lacus pulvinarvel</li>
-							<li>Prnare nisi pretium</li>
-						</ul>
-						<button class="btn-buy">Buy now</button>
-					</div>
-					<div class="team-plans-block">
-						<div class="plans-header">Premium</div>
-						<ul>
-							<li>$5.01/Month</li>
-							<li>Lorem ipsum</li>
-							<li>Dolor sit amet, consect</li>
-							<li>Adipiscing elit</li>
-							<li>Proin commodo turpis</li>
-							<li>lacus pulvinarvel</li>
-							<li>Prnare nisi pretium</li>
-						</ul>
-						<button class="btn-buy">Buy now</button>
+				<div class="containers">
+					<div class="team-flex containers">
+						<div class="team-plans-block">
+							<div class="plans-header">
+								<span>Basic</span>
+							</div>
+							<ul>
+								<li>$5.01/Month</li>
+								<li>Lorem ipsum</li>
+								<li>Dolor sit amet, consect</li>
+								<li>Adipiscing elit</li>
+								<li>Proin commodo turpis</li>
+								<li>lacus pulvinarvel</li>
+								<li>Prnare nisi pretium</li>
+							</ul>
+							<button class="btn-buy">Buy now</button>
+						</div>
+						<div class="team-plans-block">
+							<div class="plans-header">Pro</div>
+							<ul>
+								<li>$5.01/Month</li>
+								<li>Lorem ipsum</li>
+								<li>Dolor sit amet, consect</li>
+								<li>Adipiscing elit</li>
+								<li>Proin commodo turpis</li>
+								<li>lacus pulvinarvel</li>
+								<li>Prnare nisi pretium</li>
+							</ul>
+							<button class="btn-buy">Buy now</button>
+						</div>
+						<div class="team-plans-block">
+							<div class="plans-header">Premium</div>
+							<ul>
+								<li>$5.01/Month</li>
+								<li>Lorem ipsum</li>
+								<li>Dolor sit amet, consect</li>
+								<li>Adipiscing elit</li>
+								<li>Proin commodo turpis</li>
+								<li>lacus pulvinarvel</li>
+								<li>Prnare nisi pretium</li>
+							</ul>
+							<button class="btn-buy">Buy now</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		</div>
-
 		<footer>
-			<h3 class="contact-header">Contact Us</h3>
+			<h3 class="contact-header" id="contact">Contact Us</h3>
 			<div class="containers">
 				<div class="contact-social">
 					<h6>Get in touch with us</h6>
-					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, inventore, quod. Rerum quas itaque neque iusto totam amet suscipit explicabo aliquid omnis facilis at dignissimos nobis incidunt adipisci, sit numquam.
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, inventore, quod. Rerum quas itaque neque iusto totam amet suscipit explicabo aliquid omnis.
 					<ul class="social-icons">
 						<li><a href=""><i class="sprite sprite-Facebook"></i></a></li>
 						<li><a href=""><i class="sprite sprite-Google-Plus"></i></a></li>
@@ -165,6 +170,8 @@
 		<script src="js/slider.js"></script>
 		<script src="js/jquery_002.js"></script>
 		<script src="js/menu-fix.js"></script>
+		<script src="js/plans.js"></script>
+		<script src="js/nav-drop.js"></script>
 
 </body>
 

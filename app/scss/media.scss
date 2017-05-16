@@ -1,0 +1,139 @@
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        width: 100%;
+    }
+    .stickytop {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .containers {
+        width: 100%;
+    }
+    .logo {
+        margin-left: 25px;
+    }
+    .nav {
+        position: fixed;
+        width: 80px;
+        height: 40px;
+        right: 25px;
+        top: 30px;
+        overflow: hidden;
+        z-index: 999;
+        transition: .4s;
+        border: 1px solid rgba(113, 230, 245, 0.7);
+        border-radius: 4px;
+        a {
+            line-height: 2.9;
+            margin: 0;
+        }
+        a:hover {
+            color: #fff;
+            border: 0;
+        }
+        li {
+            text-align: center;
+            height: 60px;
+            display: block;
+        }
+        .current {
+            position: relative;
+        }
+    }
+    .slider-box {
+        display: none;
+    }
+    .nav-drop {
+        width: 200px;
+        height: 360px;
+        transition: .4s;
+        background-color: rgba(113, 230, 245, 0.5);
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .team-avatar {
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    .contact-social {
+        margin-left: 20px;
+        width: 25%;
+    }
+    .contact-form {
+        width: 40%;
+        margin-right: 30px;
+        input {
+            width: 86%;
+        }
+        textarea {
+            width: 86%;
+        }
+        .btn-send {
+            margin-left: 18%;
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .team-block-man {
+        width: 50%;
+        height: 250px;
+        h6 {
+            font-size: 18px;
+        }
+        .team-avatar {
+            height: 70%;
+        }
+        p:last-child {
+            display: none;
+        }
+    }
+    .team-plans-block {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .team-block {
+        display: block;
+        margin: 0;
+    }
+    .team-block-man {
+        width: 33%;
+        height: 180px;
+        margin: 0 auto 50px auto;
+        h6 {
+            margin: 0;
+        }
+    }
+    .team-flex {
+        display: block;
+    }
+    .team-plans-block {
+        width: 100%;
+    }
+    .contact-header {
+        padding: 40px 0 30px 0;
+    }
+    .contact-social {
+        width: 90%;
+    }
+    .contact-form {
+        width: 90%;
+        margin: 10px 10px 0 0;
+        textarea {
+            height: 50px;
+        }
+        .btn-send {
+            margin-left: 20%;
+        }
+    }
+}
