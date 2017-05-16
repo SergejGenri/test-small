@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 li {
   list-style: none; }
 
 .wrapper {
   width: 1440px;
   height: 100%;
-  margin: auto;
-  font-family: 'Open Sans', sans-serif; }
+  margin: auto; }
   .wrapper a {
     text-decoration: none; }
 
@@ -135,6 +137,86 @@ footer {
   height: 685px;
   margin: auto;
   background: #181818 url("../img/footer-background.jpg") no-repeat; }
+
+.contact-header {
+  text-align: center;
+  color: #fff;
+  font-size: 38px;
+  padding: 100px 0 115px 0;
+  font-weight: 400; }
+
+.contact-social {
+  width: 440px;
+  float: left;
+  text-align: left;
+  color: #fff;
+  font-size: 10px; }
+  .contact-social h6 {
+    font-size: 22px;
+    font-weight: 400; }
+  .contact-social span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5); }
+  .contact-social p {
+    color: #bface2; }
+
+.social-icons {
+  display: flex;
+  margin: 40px 0 25px 0; }
+
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block; }
+
+.sprite-Facebook {
+  width: 40px;
+  height: 40px;
+  background-position: 0px 0px; }
+
+.sprite-Google-Plus {
+  width: 40px;
+  height: 40px;
+  background-position: -40px 0px; }
+
+.sprite-Twitter-Bird {
+  width: 40px;
+  height: 40px;
+  background-position: -80px 0px; }
+
+.contact-form {
+  width: 570px;
+  float: right;
+  display: flex; }
+  .contact-form input:first-child {
+    margin-right: 30px; }
+  .contact-form input {
+    width: 43.4%;
+    min-height: 45px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    border: 0;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif; }
+  .contact-form textarea {
+    width: 96%;
+    height: 160px;
+    border-radius: 6px;
+    border: 0;
+    padding: 20px 0 0 20px;
+    font-family: 'Open Sans', sans-serif; }
+
+.btn-send {
+  width: 170px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+  background-color: #49cbcd;
+  margin: 30px 0 0 70%;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px; }
 
 .jcarousel-wrapper {
   position: relative;
