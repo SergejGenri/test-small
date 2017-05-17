@@ -3,13 +3,6 @@
     padding: 0;
 }
 
-@mixin sprit {
-	background-image: url(../img/spritesheet.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: block;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
