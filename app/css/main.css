@@ -116,6 +116,7 @@ li {
   .team-plans-block .btn-buy {
     width: 170px;
     height: 40px;
+    line-height: 40px;
     margin-top: 15px;
     display: inline-block;
     font-size: 18px;
@@ -199,7 +200,7 @@ footer {
   .contact-form input:first-child {
     margin-right: 30px; }
   .contact-form input {
-    width: 43.4%;
+    width: 257px;
     min-height: 45px;
     margin-bottom: 30px;
     border-radius: 6px;
@@ -207,7 +208,7 @@ footer {
     padding-left: 20px;
     font-family: 'Open Sans', sans-serif; }
   .contact-form textarea {
-    width: 96%;
+    width: 570px;
     height: 160px;
     border-radius: 6px;
     border: 0;
@@ -223,7 +224,8 @@ footer {
   margin: 20px 0 0 70%;
   border-radius: 4px;
   color: #fff;
-  font-size: 20px; }
+  font-size: 20px;
+  cursor: pointer; }
 
 .jcarousel-wrapper {
   position: relative;
