@@ -9,7 +9,7 @@ li {
   list-style: none; }
 
 .wrapper {
-  width: 1440px;
+  width: 100%;
   height: 100%;
   margin: auto; }
   .wrapper a {
@@ -51,7 +51,7 @@ li {
       border-bottom: 3px solid #44c0c2; }
 
 .stickytop {
-  width: 1440px;
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -86,7 +86,19 @@ li {
   height: 200px;
   display: inline-block;
   border-radius: 50%;
-  background-color: #eeeef0; }
+  background-color: #eeeef0;
+  position: relative; }
+  .team-avatar:hover::before {
+    content: "";
+    background: url(../img/hover-team.png) no-repeat;
+    width: 42px;
+    height: 41px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
 
 .plans-block {
   height: 740px;
@@ -141,10 +153,11 @@ li {
   background-color: #49cbcd; }
 
 footer {
-  width: 1440px;
+  width: 100%;
   height: 685px;
   margin: auto;
-  background: #181818 url("../img/footer-background.jpg") no-repeat; }
+  background: #181818 url("../img/footer-background.jpg") no-repeat;
+  background-size: 100% 100%; }
 
 .contact-header {
   text-align: center;
@@ -153,9 +166,12 @@ footer {
   padding: 100px 0 115px 0;
   font-weight: 400; }
 
+.footer-flex {
+  display: flex;
+  justify-content: space-between; }
+
 .contact-social {
   width: 440px;
-  float: left;
   text-align: left;
   color: #fff;
   font-size: 10px; }
@@ -195,8 +211,7 @@ footer {
 
 .contact-form {
   width: 570px;
-  float: right;
-  display: flex; }
+  display: inline-table; }
   .contact-form input:first-child {
     margin-right: 30px; }
   .contact-form input {
@@ -238,17 +253,22 @@ footer {
 .jcarousel {
   position: relative;
   overflow: hidden; }
+  .jcarousel img {
+    width: 100%;
+    height: 100%; }
 
 .jcarousel ul {
-  width: 20000em;
+  width: 300%;
   position: relative;
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0; }
 
 .jcarousel li {
-  float: left;
-  position: relative; }
+  position: relative;
+  width: 33.4%;
+  height: 570px; }
 
 /** Carousel Controls **/
 .jcarousel-control-prev,
@@ -340,15 +360,7 @@ footer {
     border-radius: 6px;
     cursor: pointer; }
 
-@media screen and (max-width: 1440px) {
-  .wrapper {
-    width: 100%; }
-  .stickytop {
-    width: 100%; }
-  footer {
-    width: 100%; } }
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .containers {
     width: 100%; }
   .logo {
@@ -384,7 +396,7 @@ footer {
     transition: .4s;
     background-color: rgba(113, 230, 245, 0.5); } }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 980px) {
   .team-avatar {
     width: 90%;
     height: 50%;
@@ -403,7 +415,7 @@ footer {
     .contact-form .btn-send {
       margin-left: 18%; } }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 800px) {
   .team-block-man {
     width: 50%;
     height: 250px; }
@@ -414,9 +426,22 @@ footer {
     .team-block-man p:last-child {
       display: none; }
   .team-plans-block {
-    width: 30%; } }
+    width: 30%; }
+  .footer-flex {
+    display: block; }
+  .contact-header {
+    padding: 40px 0 30px 0; }
+  .contact-social {
+    width: 90%; }
+  .contact-form {
+    width: 70%;
+    margin: 10px 0 0 18%; }
+    .contact-form textarea {
+      height: 50px; }
+    .contact-form .btn-send {
+      margin-left: 30%; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .team-block {
     display: block;
     margin: 0; }
@@ -429,15 +454,4 @@ footer {
   .team-flex {
     display: block; }
   .team-plans-block {
-    width: 100%; }
-  .contact-header {
-    padding: 40px 0 30px 0; }
-  .contact-social {
-    width: 90%; }
-  .contact-form {
-    width: 90%;
-    margin: 10px 10px 0 0; }
-    .contact-form textarea {
-      height: 50px; }
-    .contact-form .btn-send {
-      margin-left: 20%; } }
+    width: 100%; } }
